@@ -8,7 +8,7 @@ public class Tryout {
   }
 
   public boolean returnTrue() {
-    return false;
+    return true;
   }
 
 }
