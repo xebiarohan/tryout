@@ -2,7 +2,10 @@ package in.tryout;
 
 import static org.junit.Assert.assertEquals;
 
-class TryoutTest {
+public class TestTryout {
+    public TestTryout() {
+        super();
+    }
 
     private Tryout instance;
 

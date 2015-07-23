@@ -2,7 +2,7 @@ package in.tryout;
 
 
 
-class Tryout {
+public class Tryout {
   public Tryout() {
     super();
   }
