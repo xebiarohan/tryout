@@ -7,12 +7,6 @@
   <version>1.0-SNAPSHOT</version>
   <name>HelloWorld Maven Webapp</name>
   <url>http://maven.apache.org</url>
-<plugin>
-  <groupid>org.jacoco</groupid>
-  <artifactid>jacoco-maven-plugin</artifactid>
-  <version>0.5.5.201112152213</version>
-</plugin>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -24,7 +18,15 @@
   </dependencies>
   <build>
     <finalName>HelloWorld</finalName>
-  </build>
+	<plugins>
+<plugin>
+  <groupid>org.jacoco</groupid>
+  <artifactid>jacoco-maven-plugin</artifactid>
+  <version>0.5.5.201112152213</version>
+</plugin>
+</plugins>  
+
+</build>
 </project>
 
 
