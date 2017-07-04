@@ -11,5 +11,6 @@ node {
 	junit 'target/surefire-reports/*.xml'
 
     stage 'Record Jacoco Results'
-	step([$class: 'JacocoPublisher'])
+	publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site/jacoco', reportFiles: 'index.html', reportName: 'Code Coverage', reportTitles: ''])
+
 } 
