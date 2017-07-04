@@ -9,6 +9,5 @@ node {
     stage 'Record JUnit Results'
       junit 'target/surefire-reports/*.xml'
     stage 'Record Jacoco Results'
-      #jacoco classPattern: 'target/classes', execPattern: 'target/coverage-reports/*.exec'
       jacoco
 } 
