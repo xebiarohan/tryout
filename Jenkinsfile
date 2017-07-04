@@ -4,5 +4,6 @@ node {
 
     stage 'Build'
     def mvnHome = tool 'M3'
-    sh ${mvnHome}/bin/mvn clean build
+    buildStatus= sh returnStatus: true, script:"${mvnHome}/bin/mvn clean package 
+    echo "Build status : ${buildStatus}"
 } 
