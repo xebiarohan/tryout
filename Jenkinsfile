@@ -3,7 +3,6 @@ node {
     checkout scm
 
     stage 'Build'
-    sh 'echo Building...'
-
-
+    def mvnHome = tool 'M3'
+    sh ${mvnHome}/bin/mvn clean build
 } 
