@@ -9,5 +9,5 @@ node {
     stage 'Record JUnit Results'
       junit 'target/surefire-reports/*.xml'
     stage 'Record Jacoco Results'
-      jacoco
+step([$class: 'JacocoPublisher'])
 } 
